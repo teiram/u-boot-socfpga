@@ -1,4 +1,8 @@
-/* SPDX-License-Identifier: BSD-3-Clause */
+/* SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause */
+/*
+ * Copyright (C) 2022 Intel Corporation <www.intel.com>
+ *
+ */
 /*
  * Altera SoCFPGA PinMux configuration
  */
@@ -39,25 +43,25 @@ const u8 sys_mgr_init_table[] = {
 	3, /* FLASHIO9 */
 	3, /* FLASHIO10 */
 	3, /* FLASHIO11 */
-	3, /* GENERALIO0 */
-	3, /* GENERALIO1 */
-	3, /* GENERALIO2 */
-	3, /* GENERALIO3 */
-	3, /* GENERALIO4 */
-	3, /* GENERALIO5 */
-	3, /* GENERALIO6 */
-	3, /* GENERALIO7 */
-	3, /* GENERALIO8 */
+	0, /* GENERALIO0 */
+	0, /* GENERALIO1 */
+	0, /* GENERALIO2 */
+	1, /* GENERALIO3 */
+	1, /* GENERALIO4 */
+	0, /* GENERALIO5 */
+	0, /* GENERALIO6 */
+	1, /* GENERALIO7 */
+	1, /* GENERALIO8 */
 	3, /* GENERALIO9 */
 	3, /* GENERALIO10 */
 	3, /* GENERALIO11 */
 	3, /* GENERALIO12 */
-	2, /* GENERALIO13 */
-	2, /* GENERALIO14 */
-	3, /* GENERALIO15 */
-	3, /* GENERALIO16 */
-	2, /* GENERALIO17 */
-	2, /* GENERALIO18 */
+	3, /* GENERALIO13 */
+	3, /* GENERALIO14 */
+	1, /* GENERALIO15 */
+	1, /* GENERALIO16 */
+	1, /* GENERALIO17 */
+	1, /* GENERALIO18 */
 	0, /* GENERALIO19 */
 	0, /* GENERALIO20 */
 	0, /* GENERALIO21 */
@@ -71,27 +75,27 @@ const u8 sys_mgr_init_table[] = {
 	0, /* GENERALIO29 */
 	0, /* GENERALIO30 */
 	0, /* GENERALIO31 */
-	2, /* MIXED1IO0 */
-	2, /* MIXED1IO1 */
-	2, /* MIXED1IO2 */
-	2, /* MIXED1IO3 */
-	2, /* MIXED1IO4 */
-	2, /* MIXED1IO5 */
-	2, /* MIXED1IO6 */
-	2, /* MIXED1IO7 */
-	2, /* MIXED1IO8 */
-	2, /* MIXED1IO9 */
-	2, /* MIXED1IO10 */
-	2, /* MIXED1IO11 */
-	2, /* MIXED1IO12 */
-	2, /* MIXED1IO13 */
+	0, /* MIXED1IO0 */
+	0, /* MIXED1IO1 */
+	0, /* MIXED1IO2 */
+	0, /* MIXED1IO3 */
+	0, /* MIXED1IO4 */
+	0, /* MIXED1IO5 */
+	1, /* MIXED1IO6 */
+	1, /* MIXED1IO7 */
+	0, /* MIXED1IO8 */
+	0, /* MIXED1IO9 */
+	0, /* MIXED1IO10 */
+	0, /* MIXED1IO11 */
+	0, /* MIXED1IO12 */
+	0, /* MIXED1IO13 */
 	0, /* MIXED1IO14 */
-	3, /* MIXED1IO15 */
-	3, /* MIXED1IO16 */
-	3, /* MIXED1IO17 */
-	3, /* MIXED1IO18 */
-	3, /* MIXED1IO19 */
-	3, /* MIXED1IO20 */
+	0, /* MIXED1IO15 */
+	0, /* MIXED1IO16 */
+	0, /* MIXED1IO17 */
+	0, /* MIXED1IO18 */
+	0, /* MIXED1IO19 */
+	0, /* MIXED1IO20 */
 	0, /* MIXED1IO21 */
 	0, /* MIXED2IO0 */
 	0, /* MIXED2IO1 */
@@ -138,7 +142,7 @@ const u8 sys_mgr_init_table[] = {
 	1, /* GPLMUX11 */
 	1, /* GPLMUX12 */
 	1, /* GPLMUX13 */
-	1, /* GPLMUX14 */
+	0, /* GPLMUX14 */
 	1, /* GPLMUX15 */
 	1, /* GPLMUX16 */
 	1, /* GPLMUX17 */
@@ -146,17 +150,17 @@ const u8 sys_mgr_init_table[] = {
 	1, /* GPLMUX19 */
 	1, /* GPLMUX20 */
 	1, /* GPLMUX21 */
-	1, /* GPLMUX22 */
+	0, /* GPLMUX22 */
 	1, /* GPLMUX23 */
 	1, /* GPLMUX24 */
-	1, /* GPLMUX25 */
+	0, /* GPLMUX25 */
 	1, /* GPLMUX26 */
 	1, /* GPLMUX27 */
 	1, /* GPLMUX28 */
 	1, /* GPLMUX29 */
 	1, /* GPLMUX30 */
 	1, /* GPLMUX31 */
-	1, /* GPLMUX32 */
+	0, /* GPLMUX32 */
 	1, /* GPLMUX33 */
 	1, /* GPLMUX34 */
 	1, /* GPLMUX35 */
@@ -205,11 +209,11 @@ const u8 sys_mgr_init_table[] = {
 	0, /* QSPIUSEFPGA */
 	0, /* SPIS1USEFPGA */
 	0, /* RGMII0USEFPGA */
-	0, /* UART1USEFPGA */
+	1, /* UART1USEFPGA */
 	0, /* CAN1USEFPGA */
 	0, /* USB1USEFPGA */
 	0, /* I2C3USEFPGA */
-	0, /* I2C2USEFPGA */
+	1, /* I2C2USEFPGA */
 	0, /* I2C1USEFPGA */
 	0, /* SPIM1USEFPGA */
 	0, /* USB0USEFPGA */
