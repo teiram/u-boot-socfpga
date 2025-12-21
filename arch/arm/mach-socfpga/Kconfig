@@ -251,6 +251,11 @@ config TARGET_SOCFPGA_CYCLONE5_SOCDK
 	bool "Altera SOCFPGA SoCDK (Cyclone V)"
 	select TARGET_SOCFPGA_CYCLONE5
 
+config TARGET_SOCFPGA_CYCLONE5_CH96
+	bool "Novtech SOCFPGA Chameleon96 (Cyclone V)"
+	select BOARD_LATE_INIT
+	select TARGET_SOCFPGA_CYCLONE5
+
 config TARGET_SOCFPGA_DEVBOARDS_DBM_SOC1
 	bool "Devboards DBM-SoC1 (Cyclone V)"
 	select TARGET_SOCFPGA_CYCLONE5
@@ -307,6 +312,7 @@ config SYS_BOARD
 	default "arria10-socdk" if TARGET_SOCFPGA_ARRIA10_SOCDK
 	default "chameleonv3" if TARGET_SOCFPGA_CHAMELEONV3
 	default "cyclone5-socdk" if TARGET_SOCFPGA_CYCLONE5_SOCDK
+	default "chameleon96" if TARGET_SOCFPGA_CYCLONE5_CH96
 	default "dbm-soc1" if TARGET_SOCFPGA_DEVBOARDS_DBM_SOC1
 	default "de0-nano-soc" if TARGET_SOCFPGA_TERASIC_DE0_NANO
 	default "de1-soc" if TARGET_SOCFPGA_TERASIC_DE1_SOC
@@ -331,6 +337,7 @@ config SYS_VENDOR
 	default "altera" if TARGET_SOCFPGA_ARRIA5_SOCDK
 	default "altera" if TARGET_SOCFPGA_ARRIA10_SOCDK
 	default "altera" if TARGET_SOCFPGA_CYCLONE5_SOCDK
+	default "novtech" if TARGET_SOCFPGA_CYCLONE5_CH96
 	default "altera" if TARGET_SOCFPGA_STRATIX10_SOCDK
 	default "aries" if TARGET_SOCFPGA_ARIES_MCVEVK
 	default "devboards" if TARGET_SOCFPGA_DEVBOARDS_DBM_SOC1
@@ -357,6 +364,7 @@ config SYS_CONFIG_NAME
 	default "socfpga_arria10_socdk" if TARGET_SOCFPGA_ARRIA10_SOCDK
 	default "socfpga_chameleonv3" if TARGET_SOCFPGA_CHAMELEONV3
 	default "socfpga_cyclone5_socdk" if TARGET_SOCFPGA_CYCLONE5_SOCDK
+	default "socfpga_chameleon96" if TARGET_SOCFPGA_CYCLONE5_CH96
 	default "socfpga_dbm_soc1" if TARGET_SOCFPGA_DEVBOARDS_DBM_SOC1
 	default "socfpga_de0_nano_soc" if TARGET_SOCFPGA_TERASIC_DE0_NANO
 	default "socfpga_de1_soc" if TARGET_SOCFPGA_TERASIC_DE1_SOC
