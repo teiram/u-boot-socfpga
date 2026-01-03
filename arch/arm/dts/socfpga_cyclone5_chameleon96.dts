@@ -10,7 +10,7 @@
 #include "socfpga_cyclone5.dtsi"
 
 / {
-	model = "Novetech Chameleon96";
+	model = "Novtech Chameleon96";
 	compatible = "novtech,chameleon96", "altr,socfpga-cyclone5", "altr,socfpga";
 
 	chosen {
@@ -63,10 +63,51 @@
 
 &gpio0 {
 	status = "okay";
+
 };
+
+&porta {
+	gpio-line-names = 
+		"usb-hub-gpio",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"usb-otg-gpio";
+	/*
+	usb_otg_phy_reset:usb-phy-reset {
+		gpio-hog;
+		gpios = <9 GPIO_ACTIVE_LOW>;
+		output-high;
+		line-name = "usb-otg-phy-reset";
+	};
+	
+	usb_hub_en:usb-hub-enable {
+		gpio-hog;
+		gpios = <0 GPIO_ACTIVE_HIGH>;
+		output-high;
+		line-name = "usb-hub-en";
+	};
+	*/
+	
+};
+
 
 &gpio1 {
 	status = "okay";
+};
+
+&portb {
+	mosfet_power_enable:mosfet-power-enable {
+		gpio-hog;
+		gpios = <15 GPIO_ACTIVE_HIGH>;
+		output-high;
+		line-name = "mosfet-power-enable";
+	};
 };
 
 &i2c0 {
@@ -92,8 +133,6 @@
 };
 
 &mmc0 {
-	vmmc-supply = <&regulator_3_3v>;
-	vqmmc-supply = <&regulator_3_3v>;
 	status = "okay";
 };
 
@@ -121,10 +160,7 @@
 	status = "okay";
 };
 
-&usbphy0 {
-	status = "okay";
-};
-
 &usb1 {
 	status = "okay";
 };
+
