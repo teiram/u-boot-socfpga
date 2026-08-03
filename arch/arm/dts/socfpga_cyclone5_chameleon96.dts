@@ -8,6 +8,7 @@
 #include <dt-bindings/gpio/gpio.h>
 
 #include "socfpga_cyclone5.dtsi"
+#include "socfpga_cyclone5_chameleon96-u-boot.dtsi"
 
 / {
 	model = "Novtech Chameleon96";
@@ -59,6 +60,16 @@
 			linux,default-trigger = "none";
 		};
 	};
+
+    	/* Define the PHY node outside the soc bus */
+	/*
+	usb_phy0: usb-phy {
+		compatible = "usb-nop-xceiv";
+		#phy-cells = <0>;
+		reset-gpios = <&portb 0 GPIO_ACTIVE_LOW>; 
+		status = "okay";
+	};
+	*/
 };
 
 &gpio0 {
@@ -98,6 +109,10 @@
 
 
 &gpio1 {
+	status = "okay";
+};
+
+&gpio2 {
 	status = "okay";
 };
 
@@ -162,5 +177,8 @@
 
 &usb1 {
 	status = "okay";
+	dr_mode = "host";
+	usb-phy = <&usbphy0>;
+	phys = <&usbphy0>;
 };
 

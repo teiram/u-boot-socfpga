@@ -151,7 +151,7 @@ int board_late_init(void) {
 		ret = dm_gpio_request(&gpiod, "usb-otg-gpio");
 		if (!ret) {
 			dm_gpio_set_dir_flags(&gpiod, GPIOD_IS_OUT);
-			ret = dm_gpio_set_value(&gpiod, 1);
+			ret = dm_gpio_set_value(&gpiod, 0);
 			if (ret) {
 				printf("Error setting GPIO 9 value: %d\n", ret);
 			}
@@ -223,7 +223,7 @@ int board_late_init(void) {
 		ret = dm_gpio_request(&gpiod, "usb-otg-gpio");
 		if (!ret) {
 			dm_gpio_set_dir_flags(&gpiod, GPIOD_IS_OUT);
-			ret = dm_gpio_set_value(&gpiod, 0);
+			ret = dm_gpio_set_value(&gpiod, 1);
 			if (ret) {
 				printf("Error setting GPIO 9 value: %d\n", ret);
 			}

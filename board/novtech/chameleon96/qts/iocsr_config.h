@@ -23,7 +23,7 @@ const unsigned long iocsr_scan_chain0_table[] = {
 	0x0000003F,
 	0x00008000,
 	0x00004824,
-	0x20000000,
+	0x01209000,
 	0x82400000,
 	0x00018004,
 	0x00000000,
@@ -34,7 +34,7 @@ const unsigned long iocsr_scan_chain0_table[] = {
 	0x80000002,
 	0x00000904,
 	0x00002000,
-	0x00020000,
+	0x00001209,
 	0x00482400,
 	0x20900000,
 	0x40000001,
@@ -43,7 +43,7 @@ const unsigned long iocsr_scan_chain0_table[] = {
 };
 
 const unsigned long iocsr_scan_chain1_table[] = {
-	0x00100000,
+	0x00009048,
 	0x02412000,
 	0x048000C0,
 	0x00000009,
