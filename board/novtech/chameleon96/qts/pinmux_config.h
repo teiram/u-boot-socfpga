@@ -145,24 +145,24 @@ const u8 sys_mgr_init_table[] = {
 	0, /* GPLMUX14 */
 	1, /* GPLMUX15 */
 	1, /* GPLMUX16 */
-	1, /* GPLMUX17 */
+	0, /* GPLMUX17 */
 	1, /* GPLMUX18 */
-	1, /* GPLMUX19 */
+	0, /* GPLMUX19 */
 	1, /* GPLMUX20 */
 	1, /* GPLMUX21 */
 	0, /* GPLMUX22 */
-	1, /* GPLMUX23 */
+	0, /* GPLMUX23 */
 	1, /* GPLMUX24 */
 	0, /* GPLMUX25 */
 	1, /* GPLMUX26 */
-	1, /* GPLMUX27 */
-	1, /* GPLMUX28 */
-	1, /* GPLMUX29 */
-	1, /* GPLMUX30 */
+	0, /* GPLMUX27 */
+	0, /* GPLMUX28 */
+	0, /* GPLMUX29 */
+	0, /* GPLMUX30 */
 	1, /* GPLMUX31 */
 	0, /* GPLMUX32 */
-	1, /* GPLMUX33 */
-	1, /* GPLMUX34 */
+	0, /* GPLMUX33 */
+	0, /* GPLMUX34 */
 	1, /* GPLMUX35 */
 	1, /* GPLMUX36 */
 	1, /* GPLMUX37 */
@@ -176,13 +176,13 @@ const u8 sys_mgr_init_table[] = {
 	1, /* GPLMUX45 */
 	1, /* GPLMUX46 */
 	1, /* GPLMUX47 */
-	1, /* GPLMUX48 */
+	0, /* GPLMUX48 */
 	1, /* GPLMUX49 */
 	1, /* GPLMUX50 */
 	1, /* GPLMUX51 */
 	1, /* GPLMUX52 */
-	1, /* GPLMUX53 */
-	1, /* GPLMUX54 */
+	0, /* GPLMUX53 */
+	0, /* GPLMUX54 */
 	1, /* GPLMUX55 */
 	1, /* GPLMUX56 */
 	1, /* GPLMUX57 */
