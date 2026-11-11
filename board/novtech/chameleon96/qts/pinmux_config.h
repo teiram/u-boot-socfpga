@@ -177,7 +177,7 @@ const u8 sys_mgr_init_table[] = {
 	1, /* GPLMUX46 */
 	1, /* GPLMUX47 */
 	0, /* GPLMUX48 */
-	1, /* GPLMUX49 */
+	0, /* GPLMUX49 */
 	1, /* GPLMUX50 */
 	1, /* GPLMUX51 */
 	1, /* GPLMUX52 */
