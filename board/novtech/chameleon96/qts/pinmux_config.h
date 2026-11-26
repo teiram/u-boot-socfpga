@@ -52,10 +52,10 @@ const u8 sys_mgr_init_table[] = {
 	0, /* GENERALIO6 */
 	1, /* GENERALIO7 */
 	1, /* GENERALIO8 */
-	3, /* GENERALIO9 */
-	3, /* GENERALIO10 */
-	3, /* GENERALIO11 */
-	3, /* GENERALIO12 */
+	0, /* GENERALIO9 */
+	0, /* GENERALIO10 */
+	0, /* GENERALIO11 */
+	0, /* GENERALIO12 */
 	3, /* GENERALIO13 */
 	3, /* GENERALIO14 */
 	1, /* GENERALIO15 */
@@ -217,6 +217,6 @@ const u8 sys_mgr_init_table[] = {
 	0, /* I2C1USEFPGA */
 	0, /* SPIM1USEFPGA */
 	0, /* USB0USEFPGA */
-	0 /* SPIM0USEFPGA */
+	1 /* SPIM0USEFPGA */
 };
 #endif /* __SOCFPGA_PINMUX_CONFIG_H__ */
